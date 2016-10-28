@@ -7,8 +7,12 @@ int factorial(int n) {
     /* By convention in C, all variables must by type defined at the top
      * of each function */
     int fac = n;
+    if(n < 0)
+        fac = -1;
     
-    while (n > 0) {
+    if(n == 0)
+        fac = 1;
+    while (n > 1) {
         /* var-- reads the contents of an integer variable, then decrements
            --var decrements the contents of an integer variable, then returns
          */
