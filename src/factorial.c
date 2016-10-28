@@ -10,7 +10,7 @@ int factorial(int n) {
     if(n < 0)
         fac = -1;
     
-    if(n == 0)
+    else if(n == 0)
         fac = 1;
     while (n > 1) {
         /* var-- reads the contents of an integer variable, then decrements
