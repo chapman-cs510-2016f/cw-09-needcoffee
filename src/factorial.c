@@ -7,9 +7,9 @@ int factorial(int n) {
     /* By convention in C, all variables must by type defined at the top
      * of each function */
     int fac = n;
+    
     if(n < 0)
         fac = -1;
-    
     else if(n == 0)
         fac = 1;
     while (n > 1) {
